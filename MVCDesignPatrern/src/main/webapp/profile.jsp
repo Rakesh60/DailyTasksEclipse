@@ -14,6 +14,12 @@
 <h2>Name: <%=user.getName() %></h2>
 <h2 style='background-color:seagreen;color:white;display:inline;padding:1rem;'>Email: <%=user.getEmail() %></h2>
 <br><br>
-<a href="logout">logout</a>
+<button><a href="logout">logout</a></button>
+<ol>
+
+  <li> <a href="register.html">Register here</a></li>
+  <li> 
+<a href="alldata">See All Users</a></li>
+</ol>
 </body>
 </html>

@@ -27,9 +27,9 @@ public class Registeration extends HttpServlet {
 	String password=req.getParameter("password");
 	
 	try {
-		System.out.println("reg line 29");
+	
 		Connection conn2=dbConnection.getConnection();
-		System.out.println("reg line 31");
+		
 		String insertQuery="INSERT INTO register VALUES(?,?,?)";
 		PreparedStatement ps=conn2.prepareStatement(insertQuery);
 		ps.setString(1, name);
@@ -39,7 +39,7 @@ public class Registeration extends HttpServlet {
 		int count= ps.executeUpdate();
 		if(count>0) {
 			
-			out.print("<h2 style='background-color:green;color:white'>Register Successfully</h2>");
+			out.print("<h2 style='background-color:green;color:white;text-align:center'>Register Successfully</h2>");
 			RequestDispatcher rd=req.getRequestDispatcher("/login.html");
 
 

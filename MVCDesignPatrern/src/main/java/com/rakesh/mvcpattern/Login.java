@@ -46,7 +46,7 @@ public class Login extends HttpServlet {
 				rd.forward(req, resp);
 			}
 			else {
-				out.print("<h2 style='background-color:orange;color:white'>Email & password not matched</h2>");
+				out.print("<h2 style='background-color:orange;color:white;display:inline;'>Email & password not matched</h2>");
 				RequestDispatcher rd=req.getRequestDispatcher("/login.html");
 				rd.include(req, resp);
 			}
