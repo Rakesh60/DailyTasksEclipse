@@ -1,0 +1,37 @@
+*{
+    font-family: cursive;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(73, 73, 73);
+    color: rgba(255, 255, 255, 0.933);
+    min-height: 500px;
+
+}
+
+
+button{
+    background-color: rgb(15, 178, 7);
+    padding:1rem 2rem 1rem;
+    margin-left: 12px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #fefefe;
+    
+}
+button:hover{
+    background-color: rgb(8, 33, 7);
+    border-color: white;
+    color: #fefefe;
+    
+}
+.box h2{
+    margin: 10px;
+    padding: 20px;
+    border: #fefefe 2px solid;
+    border-radius: 10px;
+    
+}
