@@ -36,9 +36,10 @@ public class AllUsers extends HttpServlet{
 			while(rs.next()) {
 				String name=rs.getString(1);
 				String email=rs.getString(2);
-				String pass=rs.getString(3);
 				
-				out.print("<tr><td>"+name+"</td>"+"<td>"+email+"</td><td>"+pass+"</td?</tr>");
+				
+				out.print("<tr><td>"+name+"</td>"+"<td>"+email+"</td>"
+						+ " <td> <a href='actionForm?>Update</a> </td>  <td> <a href='actionForm'>Delete</a> </td>");
 				
 				
 			
@@ -46,7 +47,7 @@ public class AllUsers extends HttpServlet{
 			out.print("</table>");
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println(e.getMessage());
+			System.out.println("Error"+e.getMessage());
 		}
 	}
 
