@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Signup</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="flex justify-center items-center h-screen">
+    <div class="bg-green-100 shadow-md px-10 py-10 rounded-xl">
+      <form action="regForm" method="POST"> <div class="text-center mb-4">
+          <h1 class="text-black text-3xl font-bold">Signup</h1>
+        </div>
+
+        <div>
+          <div class="mb-4">
+            <h1 class="text-black text-xl font-bold">Name</h1>
+          </div>
+          <input
+            type="text"
+            name="name"
+            class="bg-gray-100 border border-gray-700 mb-4 px-2 py-2 w-full lg:w-80 rounded-lg text-black placeholder:text-black outline-none"
+            placeholder="Name"
+          />
+        </div>
+
+        <div>
+          <div class="mb-4">
+            <h1 class="text-black text-xl font-bold">Email</h1>
+          </div>
+          <input
+            type="email"
+            name="email"
+            class="bg-gray-100 border border-gray-700 mb-4 px-2 py-2 w-full lg:w-80 rounded-lg text-black placeholder:text-black outline-none"
+            placeholder="Email"
+          />
+        </div>
+
+        <div>
+          <div class="mb-4">
+            <h1 class="text-black text-xl font-bold">Password</h1>
+          </div>
+          <input
+            type="password"
+            name="password"
+            class="bg-gray-100 border border-gray-700 mb-4 px-2 py-2 w-full lg:w-80 rounded-lg text-black placeholder:text-black outline-none"
+            placeholder="Password"
+          />
+        </div>
+
+        <div class="flex justify-center mb-3">
+          <button
+            class="bg-green-500 w-full text-white font-bold px-2 py-2 rounded-lg"
+          >
+            Register
+          </button>
+        </div>
+
+        <div>
+          <h2 class="text-center mb-4">
+            Have an account
+            <a href="Login.html" class="text-green-600 font-bold">Login</a>
+          </h2>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
