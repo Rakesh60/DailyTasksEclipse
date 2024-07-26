@@ -7,8 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-<% String myEmail=(String) request.getAttribute("email"); %>
+<% String myEmail=(String) session.getAttribute("email"); %>
 Welcome : <%= myEmail %>
+<h4>Profile Page</h4>
+<br>
+
+
+
+
+
+<br>
+<a href="about.jsp">About Us</a>
+<a href="contact.jsp">Contact Us</a>
 
 </body>
 </html>

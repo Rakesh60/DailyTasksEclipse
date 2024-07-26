@@ -5,7 +5,10 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean>
+    <bean class="com.rakesh.beans.Student" id="stId">
+    <property name="name" value="Rakesh kumar Gupta"/>
+    <property name="rollno" value="101"/>
+    <property name="marks" value="95.4f"/>
     
     </bean>
 

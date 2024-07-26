@@ -2,24 +2,29 @@ package com.rakesh.beans;
 
 public class Student {
 	private String name;
-	private String rollno;
-	private String marks;
+	private int rollno;
+	private float marks;
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getRollno() {
+	public int getRollno() {
 		return rollno;
 	}
-	public void setRollno(String rollno) {
+	public void setRollno(int rollno) {
 		this.rollno = rollno;
 	}
-	public String getMarks() {
+	public float getMarks() {
 		return marks;
 	}
-	public void setMarks(String marks) {
+	public void setMarks(float marks) {
 		this.marks = marks;
+	}
+	public void display() {
+		System.out.println("Name: "+name);
+		System.out.println("RollNo: "+rollno);
+		System.out.println("Marks: "+marks);
 	}
 }

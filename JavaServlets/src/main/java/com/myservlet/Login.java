@@ -9,6 +9,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/login")
 public class Login extends HttpServlet {
@@ -19,7 +20,10 @@ public class Login extends HttpServlet {
 		PrintWriter out=res.getWriter();
 		
 		if(myEmail.equals("rakesh@gmail.com")) {
-			req.setAttribute("email", myEmail);
+//			req.setAttribute("email", myEmail);
+			HttpSession hs=req.getSession();
+			hs.setAttribute("email",myEmail);
+			
 			RequestDispatcher rd=req.getRequestDispatcher("/profile.jsp");
 			rd.forward(req, res);
 		}
